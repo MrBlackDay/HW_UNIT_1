@@ -1,22 +1,22 @@
 package ru.netology.service;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class CashbackHackServiceTest {
 
-    @org.testng.annotations.Test
-    void limitValuesWhen1000ShouldBe0() {
+    @org.junit.Test
+    public void limitValuesWhen1000ShouldBe0() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
         int actual = service.remain(amount);
         int expected = 0;
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
-    @org.testng.annotations.Test
-    void limitValuesWhen999ShouldBe1() {
+    @org.junit.Test
+    public void limitValuesWhen999ShouldBe1() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 999;
@@ -26,8 +26,8 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
 
-    @org.testng.annotations.Test
-    void limitValuesWhen1001ShouldBe999() {
+    @org.junit.Test
+    public void limitValuesWhen1001ShouldBe999() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 1001;
@@ -37,8 +37,8 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
 
-    @org.testng.annotations.Test
-    void equivalenceClassLess1000() {
+    @org.junit.Test
+    public void equivalenceClassLess1000() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 888;
@@ -48,8 +48,8 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
 
-    @org.testng.annotations.Test
-    void equivalenceClassMore1000() {
+    @org.junit.Test
+    public void equivalenceClassMore1000() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 4200;
