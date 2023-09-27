@@ -1,1 +1,1 @@
-# HW_UNIT_1
+[![Java CI with Gradle](https://github.com/MrBlackDay/HW_UNIT_1/actions/workflows/gradle-publish.yml/badge.svg?branch=Junit4)](https://github.com/MrBlackDay/HW_UNIT_1/actions/workflows/gradle-publish.yml)
