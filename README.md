@@ -1,0 +1,1 @@
+[![Java CI with Gradle](https://github.com/MrBlackDay/HW_UNIT_1/actions/workflows/gradle-publish.yml/badge.svg?branch=testng)](https://github.com/MrBlackDay/HW_UNIT_1/actions/workflows/gradle-publish.yml)
